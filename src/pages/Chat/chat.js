@@ -13,6 +13,7 @@ const Chat = () => {
   const [activeUsers, setActiveUsers] = useState([]);
   const [msg, setMsg] = useState("");
   const [messages, setMessages] = useState([]);
+
   useEffect(() => {
     const search = window.location.search;
     const params = new URLSearchParams(search);

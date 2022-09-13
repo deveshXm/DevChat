@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
-import FormEditor from "./FormEditor";
-import Message from "./Message/Message";
+import TextArea from "./TextArea";
+import Message from "./Message";
 
 function ChatBox(props) {
   const messagesEndRef = useRef(null);
@@ -37,7 +37,7 @@ function ChatBox(props) {
         </ul>
       </div>
       <div class="flex w-full h-2/6 p-3 border-t border-gray-800">
-        <FormEditor setMsg={props.setMsg} />
+        <TextArea setMsg={props.setMsg} />
         <button
           type="submit"
           class="ml-3 flex items-center justify-center w-1/12 h-3/6 bg-blue-500 overflow-y-auto rounded-md border-2 border-black"
