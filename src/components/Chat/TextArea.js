@@ -19,8 +19,8 @@ const TextArea = (props) => {
           toolbar:
             "bold italic strikethrough link | numlist bullist | blockquote | code codesample | emoticons | image",
           placeholder: "chat comes here...",
+          width: 600,
         }}
-        class ="overflow-y-auto"
       />
   );
 };

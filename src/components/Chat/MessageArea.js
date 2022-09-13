@@ -1,12 +1,7 @@
-import React, { useRef} from "react";
+import React from "react";
 import { Editor } from "@tinymce/tinymce-react";
 
 const TextArea = (props) => {
-//   const editorRef = useRef(null); 
-
-//   if(editorRef.current){
-//     editorRef.current.setContent(props.msg.text);
-//   }
   return (
       <Editor
         apiKey="mvnjejyo0f4mok2hqs0t45umtke09bezd1fcnxpqobwm7pl0"
