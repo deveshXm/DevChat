@@ -28,19 +28,20 @@ function ChatBox(props) {
   }, [props.msg]);
 
   return (
-    <div class="w-full ">
-      <div class="relative w-full p-6 overflow-y-auto h-4/6">
+    <div class="w-full overflow-hidden">
+      <div class="font-semibold bg-white flex justify-center">{props.room}</div>
+      <div class="relative w-full p-6 overflow-y-auto h-4/6 m-3">
         <ul class="space-y-2">
           {props.messages.map((msg, idx) => (
             <Message user={props.user} msg={msg}/>
           ))}
         </ul>
       </div>
-      <div class="flex w-full h-2/6 p-3 border-t border-gray-800">
+      <div class="flex w-full h-1/6 p-3 border-t border-gray-800">
         <TextArea setMsg={props.setMsg} />
         <button
           type="submit"
-          class="ml-3 flex items-center justify-center w-1/12 h-3/6 bg-blue-500 overflow-y-auto rounded-md border-2 border-black"
+          class="ml-3 flex items-center justify-center w-1/12 h-full  bg-blue-500 rounded-md border-2 border-black"
           onClick={handleKey}
         >
           SEND
