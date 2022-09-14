@@ -1,5 +1,5 @@
 import React from "react";
-import FormEditorBubble from "./FormEditorBubble";
+import MessageArea from "./MessageArea"
 
 const Message = (props) => {
   return (
@@ -28,7 +28,7 @@ const Message = (props) => {
               : " border-2 border-gray-800"
           } rounded shadow-md`}
         >
-          <FormEditorBubble msg={props.msg} />
+          <MessageArea msg={props.msg} class="overflow-hidden" />
         </div>
       </div>
     </div>
