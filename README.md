@@ -1,6 +1,6 @@
 # DevChat
 
--DevChat helps developers to connect and share their ideas and thoughts.
+DevChat helps developers to connect and share their ideas and thoughts.
 
 ### Running the server :
 
