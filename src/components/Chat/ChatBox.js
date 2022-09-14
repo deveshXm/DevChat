@@ -35,6 +35,7 @@ function ChatBox(props) {
           {props.messages.map((msg, idx) => (
             <Message user={props.user} msg={msg}/>
           ))}
+          <div ref={messagesEndRef} />
         </ul>
       </div>
       <div class="flex w-full h-1/6 p-3 border-t border-gray-800">
