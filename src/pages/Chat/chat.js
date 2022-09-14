@@ -7,7 +7,7 @@ let socket;
 const Chat = () => {
 
   //creating connection
-  const backEndUrl = "http://localhost:8000";
+  const backEndUrl = "https://devchat-api-1.herokuapp.com/";
   const [user, setUser] = useState("");
   const [room, setRoom] = useState("");
   const [activeUsers, setActiveUsers] = useState([]);
