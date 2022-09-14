@@ -29,7 +29,7 @@ function ChatBox(props) {
 
   return (
     <div class="w-full overflow-hidden">
-      <div class="font-semibold bg-white flex justify-center">{props.room}</div>
+      <div class="font-semibold bg-white flex justify-center">ROOM : {props.room}</div>
       <div class="relative w-full p-6 overflow-y-auto h-4/6 m-3">
         <ul class="space-y-2">
           {props.messages.map((msg, idx) => (
